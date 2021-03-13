@@ -8,3 +8,6 @@ q.append(4)
 q.append(5)
 q
 print(q)
+
+q.appendleft(6)
+print(q)
