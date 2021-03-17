@@ -10,4 +10,10 @@ cheap = heapq.nsmallest(3, portfolio, key = lambda s: s['price'])
 expensive = heapq.nlargest(3, portfolio, key = lambda s: s['price'])
 
 print(cheap)
-print(expensive)
+print('\n  ')
+for items in cheap:
+    a = items['name']
+    b = items['shares']
+    c = items['price']
+
+    print(a, b, c)
