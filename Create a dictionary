@@ -15,3 +15,6 @@ print(d)
 print('\n')
 k = json.dumps(d)
 print(k)
+
+print(type(d))
+print(type(k))
