@@ -1,0 +1,17 @@
+import json
+
+d ={}
+d['f'] = 1
+d['b'] = 2
+d['s'] = 3
+d['m'] = 7
+d['g'] = 4
+for key in d:
+    print(key, d[key])
+    
+print('\n ')
+print(d)
+
+print('\n')
+k = json.dumps(d)
+print(k)
