@@ -1,0 +1,15 @@
+from collections import defaultdict
+
+d = defaultdict(list)
+d['a'].append(1)
+d['a'].append(2)
+d['b'].append(4)
+
+print(d)
+
+m = {}
+m.setdefault('c', []).append(6)
+m.setdefault('c', []).append(7)
+m.setdefault('d', []).append(8)
+
+print(m)
