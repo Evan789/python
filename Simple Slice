@@ -4,3 +4,9 @@ b = items[2:4]
 c = items[a]
 print(b)
 print(c)
+
+items[a] = [100, 102]
+print(items)
+
+del items[a]
+print(items)
