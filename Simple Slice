@@ -10,3 +10,9 @@ print(items)
 
 del items[a]
 print(items)
+
+k = slice(5, 10, 2)
+s = 'HelloWorld'
+k.indices(len(s))
+for i in range(*k.indices(len(s))):
+    print(s[i])
