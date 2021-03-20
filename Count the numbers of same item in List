@@ -11,4 +11,8 @@ word_counts = Counter(words)
 top_three = word_counts.most_common(3)
 print(top_three)
 
+k = word_counts['not']
+print(k)
+
 ### use Counter to count all items in List and then use ().most_common(the top n) to calculate items you want  
+### k equals to the numbers of certain item in List
