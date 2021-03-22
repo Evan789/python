@@ -1,0 +1,6 @@
+def mygen(s): # generator function uses yield
+  for i in range(len(s)):
+    yield s[i:] + s[:i]
+    
+for x in mygen('kevin'):
+  print(x)
