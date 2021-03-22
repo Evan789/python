@@ -9,3 +9,6 @@ rows = [
 
 rows_by_fname = sorted(rows, key = itemgetter('fname'))
 print(rows_by_fname)
+
+a = min(rows, key=itemgetter('uid'))
+print(a)
