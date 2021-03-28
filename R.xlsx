@@ -23,3 +23,8 @@
 20 20.0 49.97500
 21 10.5 49.91006
 > install.packages("Hmisc")
+
+
+### add more variables in excel
+mydata1$Y2 = mydata1$X * 2
+View(mydata1)
