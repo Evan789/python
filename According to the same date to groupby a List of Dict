@@ -12,6 +12,8 @@ rows = [
 from operator import itemgetter
 from itertools import groupby
 
+
+### Groupby cannot order a List automatically
 rows.sort(key = itemgetter("date"))
 
 for date, items in groupby(rows, key = itemgetter('date')):
