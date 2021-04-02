@@ -12,3 +12,8 @@ print(p1)
 tech_names = {'AAPL', 'IBM', 'HPQ', 'MSFT'}
 p2 = {key : value for key, value in prices.items() if key in tech_names}
 print(p2)
+
+### Another way to make it out using combined conditions but spend bit more time to run output.
+
+p3 = { key:prices[key] for key in prices.keys() & tech_names }
+print(p3)
