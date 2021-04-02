@@ -1,0 +1,19 @@
+from collections import ChainMap
+a = {'x': 1, 'z': 3 }
+b = {'y': 2, 'z': 4 }
+c = ChainMap(a,b)
+print(c['z'])
+
+### Add items into chainmap
+values = ChainMap()
+values['x'] = 1
+values = values.new_child()
+values['x'] = 2
+values = values.new_child()
+values['x'] = 3
+print(values)
+
+
+### Discard last mapping
+values = values.parents
+print(values) 
