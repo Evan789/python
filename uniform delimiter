@@ -1,0 +1,6 @@
+line = 'asdf fjdk; afed, fjek,asdf, tto'
+
+### import re
+import re
+line1 = re.split(r'[;,\s]\s*', line)
+print(line1)
