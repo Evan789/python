@@ -4,3 +4,13 @@ line = 'asdf fjdk; afed, fjek,asdf, tto'
 import re
 line1 = re.split(r'[;,\s]\s*', line)
 print(line1)
+
+### Print string and delimiters
+fields = re.split(r'(;|,|\s)\s*', line)
+print(fields)
+
+value = fields[::2]
+print(value)
+
+delimiters = fields[1::2]
+print(delimiters)
