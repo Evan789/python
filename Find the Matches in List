@@ -1,0 +1,14 @@
+from fnmatch import fnmatch, fnmatchcase
+print(fnmatch('foo.txt', '*.TXT'))   ### '*.txt','**.txt', '***.txt','???.txt' and previous four items with capital case like"*.TXT" also works. Cause Windows system is not case sensetive
+addresses = [
+    '5412 N CLARK ST',
+    '1060 W ADDISON ST',
+    '1039 W GRANVILLE AVE',
+    '2122 N CLARK ST',
+    '4802 N BROADWAY',
+]
+
+for addr in addresses:
+    if fnmatchcase(addr, '* ST'):
+        print(addr)
+        
