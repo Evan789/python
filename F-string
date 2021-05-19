@@ -1,7 +1,6 @@
 x = 27
 
 # Method 1
-
 print(f"#1 ...\n{x} is a whole number")
 
 # Method 2 
