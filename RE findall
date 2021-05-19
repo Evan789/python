@@ -1,0 +1,15 @@
+import re
+
+###1
+xx = "guru99.edu is fun"
+r1 = re.findall(r"^\w",xx)
+print(r1)
+
+#output: ['g']
+
+###2
+xx = "guru99.edu is fun"
+r1 = re.findall(r"^\w+",xx)
+print(r1)
+
+#output: ['guru99']
