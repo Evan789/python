@@ -1,0 +1,14 @@
+x = 27
+
+# Method 1
+s = f'{x}'
+print(f"#1 ...\n{s} is a whole number")
+
+# Method 2 
+print('#1 ...\n%s is a whole number'%x)
+
+# out :
+#1 ...
+27 is a whole number
+#1 ...
+27 is a whole number
