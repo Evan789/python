@@ -1,0 +1,11 @@
+##'\s'
+import re
+print((re.split(r'\s', 'we are spliting words')))
+
+## out : ['we', 'are', 'spliting', 'words']
+
+##'s'
+import re
+print((re.split(r's', 'we are spliting words')))
+
+##out : ['we are ', 'pliting word', '']
