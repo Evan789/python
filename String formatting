@@ -1,0 +1,49 @@
+### 1 accessing argument by name
+
+user_info = {"name": "programmer",
+             "language": "python"}
+
+print("username : {0[name]}, programming in {0[language]} ".format(user_info))
+
+out: username : programmer, programming in python
+
+### 2 accessing argument by name
+
+print("The username is {username}. Email : {email}".format(username="programmer", email="programmer@python.com"))
+
+# Here the variable names can be swapped instead of positions
+print("The username is {username}. Email : {email}".format(email="programmer@python.com", username="programmer"))
+
+out : 
+The username is programmer. Email : programmer@python.com
+The username is programmer. Email : programmer@python.com
+
+
+### 3 accessing argument by position
+
+print(" This is an {0} for {1} style string formatting ".format("example","new"))
+
+# Indices can be swapped as long as we swap the arguments
+print(" This is an {1} for {0} style string formatting ".format("new","example"))
+
+# List unpacking can be used for string formatting
+print(" {} comes before {} ".format(*'ab'))
+
+# Indices can be repeated
+print(" Hello {0}! You are using {1} language. You are logged in as {0} ".format("programmer","python"))
+
+out :
+This is an example for new style string formatting 
+This is an example for new style string formatting 
+a comes before b 
+Hello programmer! You are using python language. You are logged in as programmer
+
+### 4 accesing argument by % operator
+print("Hello %s" % "programmer")
+print("You have %d message" % 1)
+print("Hello %s! You have %d message" % ("programmer", 1))
+
+out : 
+Hello programmer
+You have 1 message
+Hello programmer! You have 1 message
