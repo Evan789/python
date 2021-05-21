@@ -1,0 +1,19 @@
+from string import Template
+
+##1
+
+s  = "$user is a soccer $role"
+t = Template(s)
+new_s = t.substitute(user = 'Evan', role = 'Midfield')
+print(new_s)
+
+out : Evan is a soccer Midfield
+
+##2
+
+s1 = "$user is a soccer $role"
+t1 = Template(s)
+new_s1 = t.safe_substitute(user="Evan")
+print(new_s1)
+
+out :  Evan is a soccer $role
