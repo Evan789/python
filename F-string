@@ -18,5 +18,7 @@ username = "programmer"
 role = "admin evan"
 print(f"{username.upper()} is logged in as {role.title()}")
 
+out : PROGRAMMER is logged in as Admin Evan
+
 upper function makes it all uppercase
 title function makes a sentence with uppercase in every first character
