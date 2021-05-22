@@ -11,3 +11,12 @@ print('#1 ...\n%s is a whole number'%x)
 27 is a whole number
 #1 ...
 27 is a whole number
+
+
+# 3
+username = "programmer"
+role = "admin evan"
+print(f"{username.upper()} is logged in as {role.title()}")
+
+upper function makes it all uppercase
+title function makes a sentence with uppercase in every first character
