@@ -9,3 +9,15 @@ s.lstrip()
 
 s.rstrip()
 ' hello world'
+
+###
+t = '-----hello====='
+
+t1 = t.lstrip('-')
+out : 'hello====='
+
+t2 = t.rstrip('=')
+out : '-----hello'
+
+t3 = t.strip('-=')
+out : 'hello'
