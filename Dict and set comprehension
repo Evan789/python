@@ -1,0 +1,19 @@
+a = {0:'a', 1:'b', 2:'c', 3:'d', 4:'e', 5:'f'}
+b = {v:k for k, v in a.items()}
+print(b)
+
+##out : {'a': 0, 'b': 1, 'c': 2, 'd': 3, 'e': 4, 'f': 5}
+
+b1 = sorted(b)
+print(b1)
+
+##out : ['a', 'b', 'c', 'd', 'e', 'f']
+### Dict can be sorted by sorted(Dict), but cannot be sorted by Dict.sort()
+
+a_set = {ch for ch in "to be or not to be"}
+print(a_set)
+
+out : {'t', 'b', ' ', 'r', 'n', 'o', 'e'}
+
+print(sorted(a_set))
+out : [' ', 'b', 'e', 'n', 'o', 'r', 't']
