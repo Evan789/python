@@ -1,0 +1,31 @@
+txt = "Hello World"
+
+1
+print(txt.ljust(20))
+print(format(txt,'<20'))
+
+Out: Hello World 
+
+2
+
+print(txt.rjust(20))
+print(format(txt,'>20'))
+
+Out:          Hello World
+
+3
+
+print(txt.center(20))
+print(format(txt,'^20'))
+
+Out:     Hello World     
+
+4
+print(txt.center(20,'$'))
+
+Out: $$$$Hello World$$$$$
+
+5
+print(format(txt,'=>20'))
+
+Out :=========Hello World
