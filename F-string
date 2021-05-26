@@ -3,10 +3,15 @@ x = 27
 # Method 1
 print(f"#1 ...\n{x} is a whole number")
 
-# Method 2 
+# Method 2
+print("#1...\n{x} is a whole number". format(x = 27))
+
+# Method 3 
 print('#1 ...\n%s is a whole number'%x)
 
 # out :
+#1 ...
+27 is a whole number
 #1 ...
 27 is a whole number
 #1 ...
