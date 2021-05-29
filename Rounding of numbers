@@ -1,0 +1,17 @@
+round(1.234,2)
+
+out: 1.23
+
+round(1.5)
+
+2
+
+round(2.5)
+
+2
+
+round(3.5)
+
+4
+
+#### round() return to its cloest even number 
