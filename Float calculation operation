@@ -1,0 +1,10 @@
+4.2 + 2.1
+
+out: 6.300000000000001
+
+from decimal import Decimal
+a = Decimal('4.2')
+b = Decimal('2.1')
+print(a + b)
+
+out: 6.3
