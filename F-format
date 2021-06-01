@@ -1,0 +1,21 @@
+x = 1234.5678
+print(format(x, '0.2f'))
+
+print(format(x,'>10.1f'))
+
+print(format(x,'10.2f'))
+
+print(format(x,','))
+
+print(format(x,'0,.2f'))
+
+print('The value is {:0,.2f}'.format(x))
+
+out:
+
+1234.57
+    1234.6
+   1234.57
+1,234.5678
+1,234.57
+The value is 1,234.57
