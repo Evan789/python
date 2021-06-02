@@ -1,0 +1,10 @@
+line = 'aaa,bbb,ccccc,dd     \n'
+line.rstrip()
+
+out: 'aaa,bbb,ccccc,dd'
+
+str = "88888888this is string example....wow!!!8888888"
+print(str.lstrip('8'))
+
+out:
+'this is string example....wow!!!8888888'
