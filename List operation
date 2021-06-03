@@ -1,0 +1,7 @@
+M = ['bb', 'aa', 'cc']
+
+M.sort()
+['aa', 'bb', 'cc']
+
+M.reverse()
+['cc', 'bb', 'cc']
