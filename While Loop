@@ -1,0 +1,13 @@
+x = 4
+while x > 0:
+    print('Spam!' * x)
+    x -= 1
+    
+    
+    
+out:
+
+Spam!Spam!Spam!Spam!
+Spam!Spam!Spam!
+Spam!Spam!
+Spam!
