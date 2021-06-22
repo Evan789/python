@@ -50,3 +50,31 @@ print(a[1:3])
 print(a[1:3,1:3])
 [[ 6  7]
  [10 11]]
+ 
+##### Part 2
+
+import numpy as np
+m = np.matrix([[1, -2,3],[0, 4, 5],[7, 8,-9]])
+print(m)
+[[ 1 -2  3]
+ [ 0  4  5]
+ [ 7  8 -9]]
+
+print(m.T)  ## transpose matrix
+[[ 1  0  7]
+ [-2  4  8]
+ [ 3  5 -9]]
+
+print(m.I)  ## Inverse matrix
+[[ 0.33043478 -0.02608696  0.09565217]
+ [-0.15217391  0.13043478  0.02173913]
+ [ 0.12173913  0.09565217 -0.0173913 ]]
+
+
+v = np.matrix([[2],[3],[4]])
+
+print(m*v) ### multiply vectors and matrix
+[[ 8]
+ [32]
+ [ 2]]
+
