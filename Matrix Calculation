@@ -77,4 +77,30 @@ print(m*v) ### multiply vectors and matrix
 [[ 8]
  [32]
  [ 2]]
+ 
+#### Linear algebra - matrix
+import numpy as np
+import numpy.linalg
+m = np.matrix([[1,-2,3],[0,4,5],[7,8,-9]])
+v = np.matrix([[2],[3],[4]])
 
+### Determinant
+a  = numpy.linalg.det(m)
+print(a)
+
+-229.99999999999983
+
+
+### Eigenvalues
+b = numpy.linalg.eigvals(m)
+print(b)
+
+[-13.11474312   2.75956154   6.35518158]
+
+### solve for x in mx = v
+x = numpy.linalg.solve(m,v)
+print(x)
+
+[[0.96521739]
+ [0.17391304]
+ [0.46086957]]
