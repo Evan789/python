@@ -1,0 +1,25 @@
+import random
+values = [1,2,3,4,5,6]
+
+### select one random number from a list
+k = random.choice(values)
+print(k)
+1
+
+### select N random numbers from a list
+l = random.sample(values, 2)
+print(l)
+[2, 3]
+
+### reorder the sequence of list
+random.shuffle(values)
+print(values)
+[2, 5, 3, 6, 1, 4]
+
+### genrate random int number 
+print(random.randint(0, 10))
+10
+
+### genrate float within 0-1
+print(random.random())
+0.2293668419561059
