@@ -1,0 +1,21 @@
+from datetime import timedelta
+a  = timedelta(days = 2, hours = 6)
+b = timedelta(hours  = 4.5)
+c  = a + b
+
+print(c.days)
+2
+
+print(c.seconds)
+37800
+
+print(c.total_seconds())
+210600.0
+
+
+from datetime import datetime
+c = datetime(2012, 9, 23)
+d = datetime(2012,12,21)
+e = d - c
+print(e.days)
+89
