@@ -1,0 +1,18 @@
+items = [1,2,3]
+it = iter(items)
+print(next(it))
+1
+
+next(it)
+2
+
+next(it)
+3
+
+next(it)
+---------------------------------------------------------------------------
+StopIteration                             Traceback (most recent call last)
+<ipython-input-5-bc1ab118995a> in <module>
+----> 1 next(it)
+
+StopIteration: 
