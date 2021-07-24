@@ -9,3 +9,24 @@ import re
 print((re.split(r's', 'we are spliting words')))
 
 ##out : ['we are ', 'pliting word', '']
+
+
+split method
+
+m = 'I love you'
+# 1 print(m.split())
+
+out:
+['I', 'love', 'you']
+
+# 2 print(m.split('.'))
+
+out:
+['I  love you']
+
+# 3 print(m.split(' ', 1))
+
+out:
+['I', 'love you']
+
+## split（‘ ’，1）中以m语句里的空格作为分割标记， 1表示default separator（题中是‘，’）的使用次数
