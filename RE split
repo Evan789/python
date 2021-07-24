@@ -29,4 +29,9 @@ out:
 out:
 ['I', 'love you']
 
-## split（‘ ’，1）中以m语句里的空格作为分割标记， 1表示default separator（题中是‘，’）的使用次数
+## split（‘ ’，1）中以m语句里的空格作为分割标记， 1表示default separator（题中是‘，’）的使用次数，如果数字是0，则表示无需分割。
+
+# 4 print(m.split(' ', 0))
+
+out:
+['I  love you']
