@@ -1,0 +1,9 @@
+tokens = ['<greeting>', 'Hello World!', '</greeting>']
+count = 0
+
+for item in tokens:
+    if '<' and '>' in item:
+        count +=1
+
+
+print(count)
