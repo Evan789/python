@@ -1,0 +1,7 @@
+items = ['first string', 'second string']
+
+html_str = "<ul>\n"  
+for item in items:
+    html_str +="<li>{}</li>\n".format(item)
+    
+print(html_str+"</ul>")
