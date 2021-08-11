@@ -16,3 +16,19 @@ for cargo_name, cargo_weight in manifest:
 
 print("\nFinal Weight: {}".format(weight))
 print("Final Items: {}".format(items))
+
+out:
+METHOD 2
+current weight: 0
+  adding bananas (15)
+current weight: 15
+  adding mattresses (24)
+current weight: 39
+  adding dog kennels (42)
+current weight: 81
+  skipping machine (120)
+current weight: 81
+  adding cheeses (5)
+
+Final Weight: 86
+Final Items: ['bananas', 'mattresses', 'dog kennels', 'cheeses']
