@@ -1,0 +1,4 @@
+names = ["Rick Sanchez", "Morty Smith", "Summer Smith", "Jerry Smith", "Beth Smith"]
+
+first_names = [item.split()[0].lower() for item in names]# write your list comprehension here
+print(first_names)
