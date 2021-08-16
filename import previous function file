@@ -1,0 +1,16 @@
+mean.py
+def mean(num_list):
+    return sum(num_list) / len(num_list)
+
+def add_five(num_list):
+    return [n + 5 for n in num_list]
+    
+    
+
+import mean as m
+scores = [88,92,79,93,85]
+mean = m.mean(scores)
+curved = m.add_five(scores)
+mean_c = m.mean(curved)
+print("Scores:",scores)
+print("original mean:",mean, "new mean:",mean_c)
