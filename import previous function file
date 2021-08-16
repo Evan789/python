@@ -14,3 +14,7 @@ curved = m.add_five(scores)
 mean_c = m.mean(curved)
 print("Scores:",scores)
 print("original mean:",mean, "new mean:",mean_c)
+
+Output:
+Scores: [88, 92, 79, 93, 85]
+original mean: 87.4 new mean: 92.4
