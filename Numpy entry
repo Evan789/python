@@ -1,0 +1,149 @@
+#1
+import numpy as np
+x = np.array([1, 2, 3, 4, 5])
+print('x = ', x)
+
+output:
+x = [1 2 3 4 5]
+
+
+#2
+# 1-D array
+x = np.array([1, 2, 3])
+x.ndim
+
+# 2-D array
+Y = np.array([[1,2,3],[4,5,6],[7,8,9], [10,11,12]])
+Y.ndim
+
+# Here the`zeros()` is an inbuilt function that you'll study on the next page. 
+# The tuple (2, 3, 4( passed as an argument represents the shape of the ndarray
+y = np.zeros((2, 3, 4))
+y.ndim
+
+out:
+1
+2
+3
+
+#3
+x = np.array([1, 2, 3, 4, 5])
+
+# We print information about x
+print('x = ', x)
+print('x has dimensions:', x.shape)
+print('x is an object of type:', type(x))
+print('The elements in x are of type:', x.dtype)
+
+output:
+x = [1 2 3 4 5]
+
+x has dimensions: (5,)
+x is an object of type: class 'numpy.ndarray'
+The elements in x are of type: int64
+
+#4
+x = np.array(['Hello', 'World'])
+# We print information about x
+print('x = ', x)
+print('x has dimensions:', x.shape)
+print('x is an object of type:', type(x))
+print('The elements in x are of type:', x.dtype)
+
+output:
+x = ['Hello' 'World']
+
+x has dimensions: (2,)
+x is an object of type: class 'numpy.ndarray'
+The elements in x are of type: U5
+
+#5
+x = np.array([1, 2, 'World'])
+
+# We print information about x
+print('x = ', x)
+print('x has dimensions:', x.shape)
+print('x is an object of type:', type(x))
+print('The elements in x are of type:', x.dtype)
+
+output:
+x = ['1' '2' 'World']
+
+x has dimensions: (3,)
+x is an object of type: class 'numpy.ndarray'
+The elements in x are of type: U21
+
+#6
+x = np.array([1,2,3])
+
+# We create a rank 1 ndarray that contains floats
+y = np.array([1.0,2.0,3.0])
+
+# We create a rank 1 ndarray that contains integers and floats
+z = np.array([1, 2.5, 4])
+
+# We print the dtype of each ndarray
+print('The elements in x are of type:', x.dtype)
+print('The elements in y are of type:', y.dtype)
+print('The elements in z are of type:', z.dtype)
+
+output:
+The elements in x are of type: int64
+The elements in y are of type: float64
+The elements in z are of type: float64
+
+#7
+x = np.array([1.5, 2.2, 3.7, 4.0, 5.9], dtype = np.int64)
+
+# We print the dtype x
+print('x = ', x)
+print('The elements in x are of type:', x.dtype)
+
+output:
+x = [1 2 3 4 5]
+
+The elements in x are of type: int64
+
+#8
+Y = np.array([[1,2,3],[4,5,6],[7,8,9], [10,11,12]])
+
+print('Y = \n', Y)
+
+# We print information about Y
+print('Y has dimensions:', Y.shape)
+print('Y has a total of', Y.size, 'elements')
+print('Y is an object of type:', type(Y))
+print('The elements in Y are of type:', Y.dtype)
+
+output:
+Y =
+[[ 1 2 3]
+ [ 4 5 6]
+ [ 7 8 9]
+ [10 11 12]]
+
+Y has dimensions: (4, 3)
+Y has a total of 12 elements
+Y is an object of type: class 'numpy.ndarray'
+The elements in Y are of type: int64
+
+#9
+# We create a rank 1 ndarray
+x = np.array([1, 2, 3, 4, 5])
+
+# We save x into the current directory as 
+np.save('my_array', x)
+
+# We load the saved array from our current directory into variable y
+y = np.load('my_array.npy')
+
+# We print y
+print('y = ', y)
+# We print information about the ndarray we loaded
+print('y is an object of type:', type(y))
+print('The elements in y are of type:', y.dtype)
+
+output:
+y = [1 2 3 4 5]
+y is an object of type: class 'numpy.ndarray'
+The elements in y are of type: int64
