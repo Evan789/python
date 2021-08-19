@@ -1,0 +1,27 @@
+import pandas as pd
+
+groceries = pd.Series(data = [30, 6, 'Yes', 'No'], index = ['eggs', 'apples', 'milk', 'bread'])
+print(groceries)
+
+# We print some information about Groceries
+print('\nGroceries has shape:', groceries.shape)
+print('Groceries has dimension:', groceries.ndim)
+print('Groceries has a total of', groceries.size, 'elements')
+
+# We print the index and data of Groceries
+print('\nThe data in Groceries is:', groceries.values)
+print('The index of Groceries is:', groceries.index)
+
+output:
+eggs       30
+apples      6
+milk      Yes
+bread      No
+dtype: object
+
+Groceries has shape: (4,)
+Groceries has dimension: 1
+Groceries has a total of 4 elements
+
+The data in Groceries is: [30 6 'Yes' 'No']
+The index of Groceries is: Index(['eggs', 'apples', 'milk', 'bread'], dtype='object')
