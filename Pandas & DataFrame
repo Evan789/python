@@ -1,0 +1,26 @@
+import pandas as pd
+items = {'Bob' : pd.Series(data = [245, 25, 55], index = ['bike', 'pants', 'watch']),
+         'Alice' : pd.Series(data = [40, 110, 500, 45], index = ['book', 'glasses', 'bike', 'pants'])}
+shopping_carts = pd.DataFrame(items)
+print(shopping_carts)
+
+data ={'Integer' : [1,2,3],
+       'Float' : [4.5, 8.2, 9.6]
+       }
+       
+print()
+df = pd.DataFrame(data, index = ['label 1','label 2','label 3'])
+print(df)
+
+output:
+           Bob  Alice
+bike     245.0  500.0
+book       NaN   40.0
+glasses    NaN  110.0
+pants     25.0   45.0
+watch     55.0    NaN
+
+         Integer  Float
+label 1        1    4.5
+label 2        2    8.2
+label 3        3    9.6
