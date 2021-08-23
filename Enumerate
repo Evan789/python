@@ -3,3 +3,6 @@ heights = [72, 68, 72, 66, 76]
 for i, name in enumerate(cast):
     cast[i] = name + " " + str(heights[i])
 print(cast)
+
+output:
+['Barney Stinson 72', 'Robin Scherbatsky 68', 'Ted Mosby 72', 'Lily Aldrin 66', 'Marshall Eriksen 76']
