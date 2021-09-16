@@ -1,0 +1,26 @@
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.metrics import accuracy_score
+import pandas as pd
+import numpy as np
+from matplotlib import pyplot as plt
+
+# read the data
+data = pd.read_csv('Machine Learning data.csv')
+
+# Assign the features to variables X, and labels to the variable y
+x = data['x']
+y = data['y']
+z = data['z']
+
+plt.scatter(x, y, c=z, cmap = 'winter', edgecolor = 'black', linewidths=1, alpha=(0.74))
+
+cbar = plt.colorbar()
+cbar.set_label('haha')
+
+plt.title('Dot Distribution')
+plt.xlabel('x')
+plt.ylabel('y')
+
+plt.tight_layout()
+plt.show()
+
