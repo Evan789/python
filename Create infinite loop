@@ -1,0 +1,9 @@
+n = int(input("what number you want: "))
+a = []
+while True:
+    n = int(input("what number you want: ")) 
+    a.append(n)
+    if n == 999:
+        break
+    
+print(min(a), max(a[:-1]))
