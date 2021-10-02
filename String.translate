@@ -1,0 +1,13 @@
+import string
+
+str1 = 'i love you, but i have to go back home'
+ 
+intab = "aeiou"
+outtab = "12345"
+
+a = str1.translate(str.maketrans(intab, outtab, string.punctuation))
+print(a)
+
+output:
+
+3 l4v2 y45 b5t 3 h1v2 t4 g4 b1ck h4m2
