@@ -10,3 +10,15 @@ output:
 [['Yuan' 'Evan' 'Mike jin']
  ['Evan' 'Mike jin' 'Evan']
  ['Sern' 'Evan' 'Mike jin']]
+ 
+c = np.random.randint(1,100, size = (100, 100))
+print(c)
+
+output:
+[[92 24 89 ... 41 89 11]
+ [38 47 39 ... 15 98 63]
+ [20 94 70 ...  1 80  4]
+ ...
+ [78 67 75 ... 28 22 22]
+ [60 12 49 ... 71 84  1]
+ [91 65 56 ... 98 57 48]]
