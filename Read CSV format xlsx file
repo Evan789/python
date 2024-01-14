@@ -1,0 +1,4 @@
+> mydata1 <- read.xlsx("mydata1.xlsx")
+> mydata <- data.frame(age = numeric(0), gender = character(0), weight = numeric(0))
+> mydata = edit(mydata)
+> write.table(mydata, "mydata_txt.txt", sep ="\t")
